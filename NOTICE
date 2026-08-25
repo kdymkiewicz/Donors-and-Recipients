@@ -1,0 +1,11 @@
+Donors and Recipients
+Copyright 2026 Kajetan Dymkiewicz, Ivan Vulić, Helen Yannakoudakis,
+Eilam Shapira, Roi Reichart, and Anna Korhonen
+
+This product includes software developed for the paper “Donors and
+Recipients: On Asymmetric Transfer Across Tasks and Languages with
+Parameter-Efficient Fine-Tuning.”
+
+Third-party datasets and model weights are not distributed in this repository.
+Their names and links are provided for reproducibility; their respective
+licences and terms continue to apply.

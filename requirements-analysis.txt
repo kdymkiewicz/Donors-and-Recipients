@@ -1,0 +1,7 @@
+lang2vec==1.1.2
+matplotlib==3.10.7
+numpy==2.3.4
+pandas==2.3.3
+scipy==1.16.3
+setuptools==80.9.0
+statsmodels==0.14.5

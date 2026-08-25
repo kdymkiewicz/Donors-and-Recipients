@@ -1,0 +1,49 @@
+method: grid
+parameters:
+  model:
+    values:
+      - meta-llama/Llama-3.2-1B-Instruct
+      - meta-llama/Llama-3.2-3B-Instruct
+      - meta-llama/Llama-3.1-8B-Instruct
+      - Qwen/Qwen2.5-0.5B-Instruct
+      - Qwen/Qwen2.5-1.5B-Instruct
+      - Qwen/Qwen2.5-3B-Instruct
+      - Qwen/Qwen2.5-7B-Instruct
+      - google/gemma-3-1b-it
+      - google/gemma-3-4b-it
+
+  dataset:
+    values:
+        - arc_challenge
+        - global_mmlu
+        - truthfulqa
+        - hellaswag
+
+  language:
+    values:
+        - ar
+        - bn
+        - de
+        - en
+        - es
+        - fr
+        - hi
+        - id
+        - it
+        - pt
+        - zh
+
+  experiment_seed:
+    values:
+      - 17
+      - 42
+      - 101
+
+command:
+  - python
+  - evaluate.py
+  - ${args}
+  - "--eval_mode=adapter"
+  - "--lora_adapters_dir=outputs/adapters"
+  - "--merged_models_dir=outputs/merged"
+  - "--outputs_dir=outputs/evaluation/fine_tuned"
